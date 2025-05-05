@@ -1,0 +1,24 @@
+<nav class="topnav">
+  <div class="topnav-container">
+    <div class="topnav-brand">
+      <a href="{{ site.baseurl }}">
+        {{ site.title }}
+      </a>
+    </div>
+    
+    <div class="topnav-menu">
+      <a class="topnav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="topnav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <a class="topnav-item" href="https://github.com/carllman13">GitHub</a>
+    </div>
+  </div>
+</nav> 

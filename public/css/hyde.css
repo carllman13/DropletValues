@@ -248,3 +248,85 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Top Navigation */
+.topnav {
+  background-color: #202020;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.topnav-container {
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topnav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.topnav-brand a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.topnav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.topnav-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.topnav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.topnav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Content adjustments */
+.content {
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Post Preview */
+.post-preview {
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.read-more {
+  color: #666;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
